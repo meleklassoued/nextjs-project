@@ -1,39 +1,29 @@
 import Head from "next/head";
 import Layout from "../page-components/Layout";
-// import { createGlobalStyle, ThemeProvider } from "styled-components";
-// const GlobalStyle = createGlobalStyle`
-// html{
-//   box-sizing: border-box;
-//   background: #F5F4F0;
-//   display:block;
-//   height: 100%;
-//   max-width: 640px;
-//   margin:0 auto;
-//   padding: 0;
-// }
+import GithubUsers from "../page-components/GithubUsers/index";
 
-// body{
-//   background-color:#fafafa;
-//   min-height:100vh;
-//   padding: 1rem;
-//   margin-top:0;
-//   font-family:Verdana;
-// }
+export async function getStaticProps() {
+  const res = await fetch("https://api.github.com/users");
+  const data = await res.json();
+  console.log(data);
+  return {
+    props: {
+      data,
+    },
+  };
+}
 
-// `;
-// const theme = {
-//   colors: {
-//     primary: "#fafafa",
-//   },
-// };
-export default function Home() {
+export default function Home({ data }) {
   return (
     <div>
       <Head>
         <title>Github Users </title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Layout></Layout>
+
+      <Layout>
+        <GithubUsers data={data}></GithubUsers>
+      </Layout>
     </div>
   );
 }
