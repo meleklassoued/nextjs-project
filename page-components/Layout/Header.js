@@ -1,20 +1,17 @@
 import React from "react";
-
+import styles from "../../style/Layout.module.scss";
 function Header() {
   return (
-    <div className='header'>
-      <div className='Icon'>
-        <h1>aslema</h1>
+    <div className={styles.navcontainer}>
+      <div className={styles.LogoContainer}>
+        <h1> Github Users </h1>
       </div>
-      <div className='listName'>
-        <ul>
-          <li>Home</li>
-          <li>about</li>
-          <li>testamonials</li>
-          <li>contact</li>
-          <li>Projects</li>
-        </ul>
-      </div>
+
+      <ul className={styles.links}>
+        <li>Users</li>
+        <li></li>
+        <input type='search' />
+      </ul>
     </div>
   );
 }

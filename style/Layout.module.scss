@@ -1,0 +1,63 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,600&display=swap');
+
+
+
+
+
+//navbar  for github:
+.navcontainer{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color: #161b22;
+  box-shadow: 0 2px 4px 0 rgba(233, 231, 231, 0.2);
+  height: 6rem;
+  h1{
+      
+      color:#645cff ;
+      font-size:2rem;
+    font-family: 'Open Sans', sans-serif;;
+    padding-bottom: 5px;
+  }
+   .links {
+       display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+     
+   }
+}
+
+
+//Footer:
+
+.pagefooter {
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #161b22;
+    color: white;
+    span{
+        color: #645cff;
+      
+    }
+      a{
+            color: #645cff;
+            text-decoration: none;
+            
+        }
+
+
+}
+
+
+//children::
+.children{
+    height: calc(100vh - 10rem );
+}
