@@ -1,7 +1,8 @@
 import React from "react";
+import Image from "next/image";
 
 function index({ data }) {
-  const User = [
+  const Users = [
     {
       login: "mojombo",
       id: 1,
@@ -73,7 +74,17 @@ function index({ data }) {
     },
   ];
 
-  return <h1>aslema</h1>;
+  return (
+    <div>
+      {Users.map(({ id, avatar_url, followers_url }) => (
+        <div key={id}>
+          <h1>{id}</h1>
+          <img src={avatar_url} alt='image of user' />
+          <p>{followers_url}</p>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default index;
