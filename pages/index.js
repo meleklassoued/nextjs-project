@@ -27,6 +27,7 @@ import Layout from "../page-components/Layout";
 //   },
 // };
 export default function Home() {
+  
   return (
     <div>
       <Head>
