@@ -17,7 +17,7 @@ $white-theme-color: #F8F8F8;
   height: 6rem;
   transition: background ease-out 1s;
   h1{
-      
+
       color:$second-color;
       font-size:2rem;
     font-family: 'Open Sans', sans-serif;;
@@ -30,7 +30,7 @@ $white-theme-color: #F8F8F8;
         list-style: none;
       font-family: 'Open Sans', sans-serif;
       color: #F8F8F8;
-     
+
    }
 }
 
@@ -43,7 +43,7 @@ $white-theme-color: #F8F8F8;
   height: 6rem;
   transition: background ease-out 1s;
   h1{
-      
+
       color:$second-color;
       font-size:2rem;
     font-family: 'Open Sans', sans-serif;;
@@ -56,7 +56,7 @@ $white-theme-color: #F8F8F8;
         list-style: none;
       font-family: 'Open Sans', sans-serif;
       color: $-dark-theme-color;
-     
+
    }
 }
 
@@ -76,12 +76,12 @@ $white-theme-color: #F8F8F8;
     transition: background ease-out 1s;
     span{
         color: #645cff;
-      
+
     }
       a{
             color: #645cff;
             text-decoration: none;
-            
+
         }
 
 
@@ -97,12 +97,12 @@ $white-theme-color: #F8F8F8;
     transition: background ease-out 1s;
     span{
         color: $second-color;
-      
+
     }
       a{
             color: $second-color;
             text-decoration: none;
-            
+
         }
 
 
@@ -132,4 +132,6 @@ $white-theme-color: #F8F8F8;
      overflow-x: hidden;
     overflow-x: hidden;
     max-width: 100vw;
+  margin-left: 20px;
+
 }
