@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../page-components/GithubUsers/User.module.scss";
-import Image from "next/image";
 
 function index({ data }) {
   return (
