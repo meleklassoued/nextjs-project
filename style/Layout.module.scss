@@ -112,6 +112,7 @@ $white-theme-color: #F8F8F8;
 
 //children::
 .childrenwhite{
+  padding: 0 100px;
     height: calc(100vh - 10rem );
     background-color: $-dark-theme-color;
     color: white;
@@ -123,6 +124,7 @@ $white-theme-color: #F8F8F8;
 }
 
 .children{
+    padding: 0 100px;
      height: calc(100vh - 10rem );
     background-color: $white-theme-color;
     color: black;
