@@ -22,7 +22,7 @@ export default function Home({ data }) {
       </Head>
 
       <Layout>
-        <GithubUsers></GithubUsers>
+        <GithubUsers data={data}></GithubUsers>
       </Layout>
     </div>
   );
