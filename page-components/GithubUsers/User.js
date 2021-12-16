@@ -9,7 +9,9 @@ function User({ user }) {
       <div className={styles.UserCart} key={id}>
         <img src={avatar_url} alt='image of user' />
         <h1>{login}</h1>
-        <p>{followers_url}</p>
+        <button>
+          <a href={followers_url}>followers</a>
+        </button>
       </div>
     </>
   );
