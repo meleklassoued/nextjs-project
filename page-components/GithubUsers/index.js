@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../page-components/GithubUsers/User.module.scss";
 
-function index({ data }) {
+function Index({ data }) {
   return (
     <div className={styles.container}>
       {data.map(({ id, login, avatar_url, followers_url }) => (
@@ -15,4 +15,4 @@ function index({ data }) {
   );
 }
 
-export default index;
+export default Index;
