@@ -16,7 +16,6 @@ function Header() {
         <ul className={styles.links}>
           <li>Users</li>
           <MdDarkMode onClick={() => changeTheme()}> </MdDarkMode>
-          <input type='search' />
         </ul>
       </div>
     );
@@ -30,7 +29,6 @@ function Header() {
         <ul className={styles.links}>
           <li>Users</li>
           <MdOutlineDarkMode onClick={() => changeTheme()}></MdOutlineDarkMode>
-          <input type='search' />
         </ul>
       </div>
     );
