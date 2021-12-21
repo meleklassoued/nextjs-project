@@ -1,27 +1,21 @@
 import React, { useState } from "react";
 import Styles from "../Search-comp/Search.module.scss";
 
-function Search() {
+function Search({ onSubmitSearch }) {
   const [State, setState] = useState({
-    search: "malik",
+    search: "",
   });
   const { search } = State;
 
-  const handleForm = (e) => {
-    setState({
-      search: e.target.value,
-    });
-  };
-
-  const SearchUser = (e) => {
-    e.prevent.default();
-    props.getUserSearch(search);
+  const submitSearch = (e) => {
+    e.preventDefault();
+    onSubmitSearch({ value: search });
   };
 
   console.log(search);
   return (
     <div className={Styles.container}>
-      <form onSubmit={SearchUser}>
+      <form onSubmit={submitSearch}>
         <label className={Styles.label} htmlFor='Users'>
           search a User
         </label>
@@ -30,7 +24,7 @@ function Search() {
           className={Styles.input}
           type='text'
           name='Users'
-          onChange={handleForm}
+          onChange={(e)=>setState({search:e.target.value})}
           value={search}
         />{" "}
         <br />
