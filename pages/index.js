@@ -21,7 +21,7 @@ export default function Home({ data }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <Search />
+        
         <GithubUsers data={data}></GithubUsers>
       </Layout>
     </div>
